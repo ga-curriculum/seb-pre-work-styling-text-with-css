@@ -248,7 +248,7 @@ First, we'll have to import the font before we can apply it. To import a font:
 
 1.  After selecting the font, click "Select Style" (located underneath Size). A new column window will pop up on the right hand side of the window. 
 2. Under “Embed Font,” click “@Import.”
-3. Copy the import URL (you won’t need the `<style>` tags in this case): `@import url('https://fonts.googleapis.com/css?family=Poiret+One');`.
+3. Copy the import URL (you won’t need the `style` tags in this case): `@import url('https://fonts.googleapis.com/css?family=Poiret+One');`.
 4. Paste the entire URL at the very top of your CSS style sheet, above all of your other rules.
 
 **Note**: You wouldn't see the font on the page just yet– it won't automatically be added to any HTML elements.
@@ -304,7 +304,7 @@ Let’s see how each label works.
 
 ---
 
-<h1>Working with IDs</h1>
+<h1 class='slide-header'>Working with IDs</h1>
 
 An **ID** lets us specify a unique label so that we can apply distinct styles to _just one thing_. You can add an ID to any part of your HTML in order to single it out, then target that ID in the CSS using the `#` character.
 
@@ -395,7 +395,5 @@ Have we converted you into a text-styling nerd yet? If not, these sites certainl
 * <a href="https://1stwebdesigner.com/css3-text-effects-typography/" target="_blank" rel="noreferrer noopener">More ways to style text in CSS</a>.
 * A collection of awesome <a href="https://envato.com/blog/css3-typography-code-snippets/" target="_blank" rel="noreferrer noopener">text-styling code snippets</a> you can grab for your own projects.
 * <a href="http://hellohappy.org/beautiful-web-type/" target="_blank" rel="noreferrer noopener">Beautiful Web Type</a>.
-
----
 
 </textarea>
