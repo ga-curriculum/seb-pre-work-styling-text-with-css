@@ -59,7 +59,7 @@ You can code the `color` property...
 * Using a color’s **Hex code** — a unique six-digit value for any color, such as `color: #f142a3`.
 * Using an **RGB value** — another unique identifier, such as `color: rgb(226,28,35)`.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/color.png)
+<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/color.png">
   </p>
 </details>
 
@@ -73,7 +73,7 @@ You can code the `color` property...
       * Define the pixel size (e.g., `font-size: 12px`).
       * Set the size relative to other elements using `em`. `font-size: 0.5em` makes the font half the size of other elements, while `font-size: 2em` makes it twice as big.
       
-      ![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-size.png)
+    <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-size.png">
   </p>
 </details>
 
@@ -87,7 +87,7 @@ You can set `font-weight` a couple of ways:
 * Using `font-weight: bold`, which is similar to the “bold” setting in a word processor.
 * Using a numeric thickness on a scale of 100–900.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-weight.png)  
+<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-weight.png">
 </p>
 </details>
 
@@ -99,7 +99,7 @@ You can set `font-weight` a couple of ways:
 
 It’s written as: `font-style: italic`.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-style.png)
+<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-style.png">
  </p>
 </details>
 
@@ -111,7 +111,7 @@ It’s written as: `font-style: italic`.
 * Set all letters to lower case: `text-transform: lowercase`.
 * Capitalize the first letter in each word: `text-transform: capitalize`.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-transform.png)
+<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-transform.png">
  </p>
 </details>
 
@@ -124,7 +124,7 @@ It’s written as: `font-style: italic`.
   
   Most frequently, it’s used to remove the default underline for hyperlinks (the `<a>` tag in HTML) by setting the value to `none`.
   
-  ![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-decoration.png)
+  <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-decoration.png">
     
  </p>
 </details>
@@ -135,7 +135,7 @@ It’s written as: `font-style: italic`.
   <p class="transcript-text">
     The `text-align` property affects how your content is aligned on the page: centered, right-aligned, or left-aligned (once again, just like in a word processor). It’s written as: `text-align: right`.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-align.png)
+<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-align.png">
  </p>
 </details>
 
@@ -174,7 +174,7 @@ For your next act...
 1. Add a `<span>` tag in your HTML around the words `Atlanta, GA` in the `<p>` tag on line 21.
 2. In CSS, create a rule for the `<span>` to turn the text color to red (try Hex #b22222). 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="ATL Pride" src="https://codepen.io/GAmarketing/embed/oNOYaye?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="ATL Pride" src="https://codepen.io/GAmarketing/embed/oNOYaye?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/oNOYaye">
   ATL Pride</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -192,7 +192,7 @@ Based on this feedback, let’s make these updates:
 1. Adjust the `<h1>` to be 36px without changing the `<h2>` styling. (Hint: You’ll need to separate out the existing rule!)
 2. Add a rule for the `<a>` tags to make the text purple (try Hex #9932cc) and remove the default underlines.
 
-  <iframe height="300" style="width: 100%;" scrolling="no" title="Checking In With Our Client" src="https://codepen.io/GAmarketing/embed/RwOoeJM?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Checking In With Our Client" src="https://codepen.io/GAmarketing/embed/RwOoeJM?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
     See the Pen <a href="https://codepen.io/GAmarketing/pen/RwOoeJM">
     Checking In With Our Client</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
     on <a href="https://codepen.io">CodePen</a>.
@@ -214,7 +214,7 @@ Let’s look at the links in Hannah’s nav: the `<a>` tags we just styled. They
   }
   ```
 
-  <iframe height="300" style="width: 100%;" scrolling="no" title="A Cool Trick" src="https://codepen.io/GAmarketing/embed/WNWoayW?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="A Cool Trick" src="https://codepen.io/GAmarketing/embed/WNWoayW?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
     See the Pen <a href="https://codepen.io/GAmarketing/pen/WNWoayW">
     A Cool Trick</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
     on <a href="https://codepen.io">CodePen</a>.
@@ -244,7 +244,7 @@ Let’s try it out!
 1. Create a new CSS declaration for the `<ul>`.
 2. Set the `list-style` property to `none`.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="List Styling" src="https://codepen.io/GAmarketing/embed/jORVeKj?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="List Styling" src="https://codepen.io/GAmarketing/embed/jORVeKj?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/jORVeKj">
   List Styling</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -307,7 +307,7 @@ Remember, you’ll first need the `import` statement: `@import url('https://font
 
 **Pro tip**: Add the `<body>` rule at the top of your style sheet — below the `@import` URL but before all of the other rules.
 
-  <iframe height="300" style="width: 100%;" scrolling="no" title="Font Magic" src="https://codepen.io/GAmarketing/embed/eYoBPjJ?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Font Magic" src="https://codepen.io/GAmarketing/embed/eYoBPjJ?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
     See the Pen <a href="https://codepen.io/GAmarketing/pen/eYoBPjJ">
     Font Magic</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
     on <a href="https://codepen.io">CodePen</a>.
@@ -415,7 +415,7 @@ Next, let’s specify the `<p>` elements. There’s one at the top and one in th
 
 One last thing: There’s a bit too much purple text on the site. Let’s set the `<h1>` and `<h2>` back to a font color of black.
 
-  <iframe height="300" style="width: 100%;" scrolling="no" title="Making Hannahs Website Classy" src="https://codepen.io/GAmarketing/embed/XWQNxBK?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Making Hannahs Website Classy" src="https://codepen.io/GAmarketing/embed/XWQNxBK?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
     See the Pen <a href="https://codepen.io/GAmarketing/pen/XWQNxBK">
     Making Hannahs Website Classy</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
     on <a href="https://codepen.io">CodePen</a>.
