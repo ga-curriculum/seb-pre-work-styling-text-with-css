@@ -49,42 +49,42 @@ Let’s review these text-styling properties and learn about a few new ones.
 <h1 class="slide-header">Text-Styling Properties</h1>
 
 <details>
-  <summary>`color`</summary>
+  <summary>color</summary>
   
   <p class="transcript-text">
-    The `color` property changes the color of the text.
+    The color property changes the color of the text.
 
-You can code the `color` property...
-* With a regular word, such as `color: red`.
-* Using a color’s **Hex code** — a unique six-digit value for any color, such as `color: #f142a3`.
-* Using an **RGB value** — another unique identifier, such as `color: rgb(226,28,35)`.
+You can code the color property...
+* With a regular word, such as color: red.
+* Using a color’s **Hex code** — a unique six-digit value for any color, such as color: #f142a3.
+* Using an **RGB value** — another unique identifier, such as color: rgb(226,28,35).
 
 <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/color.png">
   </p>
 </details>
 
 <details>
-  <summary>`font-size`</summary>
+  <summary>font-size</summary>
   
   <p class="transcript-text">
-    The `font-size` rule affects — you guessed it — the size of your font. By default, certain HTML elements are larger than others: `<h1>` is the largest, followed by `<h2>`, and so on. But you can also adjust these sizes how ever you’d like.
+    The font-size rule affects — you guessed it — the size of your font. By default, certain HTML elements are larger than others: h1 is the largest, followed by h2, and so on. But you can also adjust these sizes how ever you’d like.
 
-      Here’s how you can set `font-size`:
-      * Define the pixel size (e.g., `font-size: 12px`).
-      * Set the size relative to other elements using `em`. `font-size: 0.5em` makes the font half the size of other elements, while `font-size: 2em` makes it twice as big.
+      Here’s how you can set font-size:
+      * Define the pixel size (e.g., font-size: 12px).
+      * Set the size relative to other elements using em. font-size: 0.5em makes the font half the size of other elements, while font-size: 2em makes it twice as big.
       
     <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-size.png">
   </p>
 </details>
 
 <details>
-  <summary>`font-weight`</summary>
+  <summary>font-weight</summary>
   
   <p class="transcript-text">
-    `font-weight` defines how heavy the text should be. 
+    font-weight defines how heavy the text should be. 
 
-You can set `font-weight` a couple of ways:
-* Using `font-weight: bold`, which is similar to the “bold” setting in a word processor.
+You can set font-weight a couple of ways:
+* Using font-weight: bold, which is similar to the “bold” setting in a word processor.
 * Using a numeric thickness on a scale of 100–900.
 
 <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-weight.png">
@@ -92,37 +92,37 @@ You can set `font-weight` a couple of ways:
 </details>
 
 <details>
-  <summary>`font-style`</summary>
+  <summary>font-style</summary>
   
   <p class="transcript-text">
-    `font-style` is most often used to make text italic, as you would in a word processor.
+    font-style is most often used to make text italic, as you would in a word processor.
 
-It’s written as: `font-style: italic`.
+It’s written as: font-style: italic.
 
 <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-style.png">
  </p>
 </details>
 
 <details>
-  <summary>`text-transform`</summary>
+  <summary>text-transform</summary>
   <p class="transcript-text">
-    You can use `text-transform`  to...
-* Set all letters in a word to upper case: `text-transform: uppercase`.
-* Set all letters to lower case: `text-transform: lowercase`.
-* Capitalize the first letter in each word: `text-transform: capitalize`.
+    You can use text-transform  to...
+* Set all letters in a word to upper case: text-transform: uppercase.
+* Set all letters to lower case: text-transform: lowercase.
+* Capitalize the first letter in each word: text-transform: capitalize.
 
 <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-transform.png">
  </p>
 </details>
 
 <details>
-  <summary>`text-decoration`</summary>
+  <summary>text-decoration</summary>
 <p class="transcript-text">
-  `text-decoration` can add lines under or through your text:
-  * `text-decoration: underline`
-  * `text-decoration: line-through`
+  text-decoration can add lines under or through your text:
+  * text-decoration: underline
+  * text-decoration: line-through
   
-  Most frequently, it’s used to remove the default underline for hyperlinks (the `<a>` tag in HTML) by setting the value to `none`.
+  Most frequently, it’s used to remove the default underline for hyperlinks (the anchor tag in HTML) by setting the value to none.
   
   <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-decoration.png">
     
@@ -130,10 +130,10 @@ It’s written as: `font-style: italic`.
 </details>
 
 <details>
-  <summary>`text-align`</summary>
+  <summary>text-align</summary>
   
-  <p class="transcript-text">
-    The `text-align` property affects how your content is aligned on the page: centered, right-aligned, or left-aligned (once again, just like in a word processor). It’s written as: `text-align: right`.
+  <p>
+    The text-align property affects how your content is aligned on the page: centered, right-aligned, or left-aligned (once again, just like in a word processor). It’s written as: text-align: right.
 
 <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-align.png">
  </p>
