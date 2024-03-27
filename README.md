@@ -385,18 +385,13 @@ Currently, all of the text is the same color. Describe the best approach for mak
 
 <details>
   <summary>Reveal Answer</summary>
-  As there are two bio paragraphs and possibly other `<p>` elements on the page, you should assign the bio paragraphs a class, like so: 
-```html
-<p class="bio">Paragraph 1</p>
-<p class="bio">Paragraph 2</p>
-```
+  As there are two bio paragraphs and possibly other paragraph elements on the page, you should assign the bio paragraphs a class called "bio".
 
 Then, you can add CSS to style the text color of the bio paragraphs:
-```css
+
 .bio {
  color: #2e77bb;
 }
-```
   </details>
 
 ---
