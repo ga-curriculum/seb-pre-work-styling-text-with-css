@@ -156,10 +156,10 @@ h2 {
 ```
 <fieldset>
   <legend>Please select all that apply</legend>
-  <input type="checkbox" id="uniqueAnswer" name="unique" correct="true"/><label for="uniqueAnswer">The `h2` is centered</label><br />
-  <input type="checkbox" id="uniqueAnswer4" name="unique4" correct="true"/><label for="uniqueAnswer4">The `h4` is 14px</label><br />
-  <input type="checkbox" id="uniqueAnswer2" name="unique2" /><label for="uniqueAnswer2">The `h2` is all lowercase</label><br />
-  <input type="checkbox" id="uniqueAnswer3" name="unique3" correct="true"/><label for="uniqueAnswer3">The `h2` text has a strikethrough</label><br />
+  <input type="checkbox" id="uniqueAnswer" name="unique" correct="true"/><label for="uniqueAnswer">The h2 is centered</label><br />
+  <input type="checkbox" id="uniqueAnswer4" name="unique4" correct="true"/><label for="uniqueAnswer4">The h2 is 14px</label><br />
+  <input type="checkbox" id="uniqueAnswer2" name="unique2" /><label for="uniqueAnswer2">The h2 is all lowercase</label><br />
+  <input type="checkbox" id="uniqueAnswer3" name="unique3" correct="true"/><label for="uniqueAnswer3">The h2 text has a strikethrough</label><br />
 </fieldset>
 
 <button class="ant-btn ant-btn-primary multiple-choice-checkbox-submit">Submit Answer</button>
