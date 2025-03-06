@@ -5,7 +5,7 @@
 <span id=time-estimate class="color-grey-500">30 mins</span>
 
 <p id="lesson-description">
-  Have you ever squinted over a website because it was too hard to read on your phone? Or because the font color blended into the background? Text styles affect the readability of a website and in turn how viewers engage with your page. In this lesson, we’ll show you how to set specific, user-friendly fonts and font styles.
+Have you ever squinted over a website because it was too hard to read on your phone? Or because the font color blended to closely into the background? Text styles affect the readability of a website and in turn how viewers engage with your page. In this lesson, we’ll show you how to set specific, user-friendly fonts and font styles.
 </p>
 
 <h5 id="topics-header" class="color-grey-500">Topics</h5>
@@ -18,7 +18,7 @@ Using Classes and IDs in CSS
 
 <hr>
 
-<a href="https://ga-create-api.s3.amazonaws.com/studyguides/styling-text-with-css-318e6a.pdf" target="_blank" download="styling_text_with_css_study_guide.pdf" class="ant-btn" data-trackable="true" data-track-category="study guide" data-track-section="lesson page" data-track-action="download study guide"><span role="img" class="anticon"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><g class="download_svg__nc-icon-wrapper"><path d="M8 12c.3 0 .5-.1.7-.3L14.4 6 13 4.6l-4 4V0H7v8.6l-4-4L1.6 6l5.7 5.7c.2.2.4.3.7.3z"></path><path data-color="color-2" d="M1 14h14v2H1z"></path></g></svg></span><span> Download Study Guide</span></a>
+<a href="./assets/styling_text_with_css_study_guide.pdf" target="_blank" download="styling_text_with_css_study_guide.pdf" class="ant-btn" data-trackable="true" data-track-category="study guide" data-track-section="lesson page" data-track-action="download study guide"><span role="img" class="anticon"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><g class="download_svg__nc-icon-wrapper"><path d="M8 12c.3 0 .5-.1.7-.3L14.4 6 13 4.6l-4 4V0H7v8.6l-4-4L1.6 6l5.7 5.7c.2.2.4.3.7.3z"></path><path data-color="color-2" d="M1 14h14v2H1z"></path></g></svg></span><span> Download Study Guide</span></a>
 
 ---
 
@@ -36,108 +36,132 @@ Using Classes and IDs in CSS
 
 <h1 class="slide-header">Let's Get Back to Work</h1>
 
-In the last lesson, we added some basic styling to Hannah’s website, as you can see below. We also learned a few handy CSS properties in order to style `<h1>`, `<h2>`, and `<p>`:
-  * `text-align` justifies the content in the center of the page.
-  * `color` changes the color of the text.
-  
-Let’s review these text-styling properties and learn about a few new ones.
+In the last lesson, we applied some basic styling to Hannah’s website, as shown below. We also explored a few important CSS properties that help style different sections of a page:
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/hannah-lesson-2.png)
+- `background-color` - Sets the background color of an element.
+- `color` - Changes the text color.
+- `text-align` - Aligns text within an element (centering content on the page).
+
+Great progress so far!
+Now, let's review these text-styling properties and introduce a few new ones!
+
+<img src="./assets/website-progress.png" alt="Hannah's Website Progress" style="width:800px;"/>
 
 ---
 
 <h1 class="slide-header">Text-Styling Properties</h1>
 
-<details>
-  <summary>color</summary>
-  
-  <p class="transcript-text">
-    The color property changes the color of the text.
+### color
 
-You can code the color property...
-* With a regular word, such as color: red.
-* Using a color’s **Hex code** — a unique six-digit value for any color, such as color: #f142a3.
-* Using an **RGB value** — another unique identifier, such as color: rgb(226,28,35).
+The `color` property controls the color of text on a webpage.
 
-<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/color.png">
-  </p>
-</details>
+You can set the `color` property in three different ways:
 
-<details>
-  <summary>font-size</summary>
-  
-  <p class="transcript-text">
-    The font-size rule affects — you guessed it — the size of your font. By default, certain HTML elements are larger than others: h1 is the largest, followed by h2, and so on. But you can also adjust these sizes how ever you’d like.
+- **Named Colors** – Use a standard color name, like `red`.
+- **Hex Codes** – Use a six-digit code that represents a specific color, such as `#f142a3`.
+- **RGB Values** – Define a color by specifying its red, green, and blue (RGB) values, such as `rgb(226, 28, 35)`.
 
-      Here’s how you can set font-size:
-      * Define the pixel size (e.g., font-size: 12px).
-      * Set the size relative to other elements using em. font-size: 0.5em makes the font half the size of other elements, while font-size: 2em makes it twice as big.
-      
-    <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-size.png">
-  </p>
-</details>
+<img src="./assets/colors-in-css.png" alt="Setting Colors in CSS" style="width:800px;"/>
 
-<details>
-  <summary>font-weight</summary>
-  
-  <p class="transcript-text">
-    font-weight defines how heavy the text should be. 
+---
 
-You can set font-weight a couple of ways:
-* Using font-weight: bold, which is similar to the “bold” setting in a word processor.
-* Using a numeric thickness on a scale of 100–900.
+<h1 class="slide-header">Text-Styling Properties</h1>
 
-<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-weight.png">
-</p>
-</details>
+### font-size
 
-<details>
-  <summary>font-style</summary>
-  
-  <p class="transcript-text">
-    font-style is most often used to make text italic, as you would in a word processor.
+The `font-size` property controls —you guessed it— the size of text on a webpage. By default, some HTML elements have different font sizes—`h1` is the largest, followed by `h2`, and so on. However, you can customize these sizes to fit your design.
 
-It’s written as: font-style: italic.
+Here are two ways to set `font-size`:
 
-<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/font-style.png">
- </p>
-</details>
+- **Pixels** `px` – Set an exact size in pixels.
 
-<details>
-  <summary>text-transform</summary>
-  <p class="transcript-text">
-    You can use text-transform  to...
-* Set all letters in a word to upper case: text-transform: uppercase.
-* Set all letters to lower case: text-transform: lowercase.
-* Capitalize the first letter in each word: text-transform: capitalize.
+- **Relative Units** `em` – The size is based on the font size of the element it is inside (its parent).
 
-<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-transform.png">
- </p>
-</details>
+If the parent element is the `<body>`, the font size of the text will be based on the **default font size of the browser**, which is usually `16px` unless changed:
 
-<details>
-  <summary>text-decoration</summary>
-<p class="transcript-text">
-  text-decoration can add lines under or through your text:
-  * text-decoration: underline
-  * text-decoration: line-through
-  
-  Most frequently, it’s used to remove the default underline for hyperlinks (the anchor tag in HTML) by setting the value to none.
-  
-  <img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-decoration.png">
-    
- </p>
-</details>
+- `font-size: 0.5em;` makes the text `8px` (_half_ the parent's size).
+- `font-size: 2em;` makes the text `32px` (_twice_ the parent's size).
 
-<details>
-  <summary>text-align</summary>
-  
-  <p>
-    The text-align property affects how your content is aligned on the page: centered, right-aligned, or left-aligned (once again, just like in a word processor). It’s written as: text-align: right.
+Using relative units `em` allows for better responsiveness, making text sizes more flexible across different screen sizes.
 
-<img src="https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/text-align.png">
- </p>
-</details>
+<img src="./assets/font-size-in-css.png" alt="Setting Font Size in CSS" style="width:800px;"/>
+
+---
+
+<h1 class="slide-header">Text-Styling Properties</h1>
+
+### font-weight
+
+The `font-weight` property controls how _thick_ or _bold_ text appears.
+
+You can set `font-weight` in two ways:
+
+- **Named Value** `bold` – Works like the bold option in a word processor.
+- **Numeric Scale** `100–900` – Allows more control over thickness, where:
+  - `100` is the thinnest
+  - `400` is normal text
+  - `700` is bold
+  - `900` is the thickest
+
+<img src="./assets/font-weight-in-css.png" alt="Setting Font Weight in CSS" style="width:800px;"/>
+
+---
+
+<h1 class="slide-header">Text-Styling Properties</h1>
+
+### font-style
+
+The `font-style` property is used to change the appearance of text, most commonly to make it **italic**, just like in a word processor.
+
+- To make text italic, use: `font-style: italic;`
+
+<img src="./assets/font-style-in-css.png" alt="Setting Font Style in CSS" style="width:800px;"/>
+
+---
+
+<h1 class="slide-header">Text-Styling Properties</h1>
+
+### text-transform
+
+The text-transform property controls whether text appears in uppercase, lowercase, or capitalized format.
+
+- **Lowercase** – Converts all letters to lowercase with `text-transform: lowercase;`
+- **Uppercase** – Converts all letters to UPPERCASE with `text-transform: uppercase;`
+- **Capitalize** – Capitalizes the first letter of each word with `text-transform: caitalize;`
+
+<img src="./assets/text-transform-in-css.png" alt="Setting Text Transform in CSS" style="width:800px;"/>
+
+---
+
+<h1 class="slide-header">Text-Styling Properties</h1>
+
+### text-decoration
+
+The `text-decoration` property allows you to add or remove lines under or through text.
+
+Here are the most common uses:
+
+- **Underline text**: `text-decoration: underline;`
+- **Strike through text**: `text-decoration: line-through`
+- **Remove underlines**: `text-decoration: none;`
+
+Most frequently, it’s used to **remove the default underline for hyperlinks** (the `<a>` tag in HTML) by setting the value to none.
+
+<img src="./assets/text-decoration-in-css.png" alt="Setting Text Decoration in CSS" style="width:800px;"/>
+
+---
+
+<h1 class="slide-header">Text-Styling Properties</h1>
+
+### text-align
+
+The text-align property controls how text is positioned within an element—just like alignment options in a word processor.
+
+- **Left-aligned** (default): `text-align: left;`
+- **Centered**: `text-align: center;`
+- **Right-aligned**: `text-align: right;`
+
+<img src="./assets/text-align-in-css.png" alt="Setting Text Align in CSS" style="width:800px;"/>
 
 ---
 
@@ -154,6 +178,7 @@ h2 {
   font-size: 14px;
 }
 ```
+
 <fieldset>
   <legend>Please select all that apply</legend>
   <input type="checkbox" id="uniqueAnswer" name="unique" correct="true"/><label for="uniqueAnswer">The h2 is centered</label><br />
@@ -166,86 +191,137 @@ h2 {
 
 ---
 
-<h1 class="slide-header">Code Practice</h1>
+<h1 class="slide-header">Checking In with Our Client</h1>
 
-Let’s put some of these font stylings to work. We know that Hannah has some hometown pride for ATL, so let’s highlight it.
+Let's apply some font styling! Hannah wants her name to stand out, so we'll make the headline larger and make some other text adjustments throughout the page.
 
-For your next act... 
-1. Add a `<span>` tag in your HTML around the words `Atlanta, GA` in the `<p>` tag on line 21.
-2. In CSS, create a rule for the `<span>` to turn the text color to red (try Hex #b22222). 
+**1. Style the `<h1>` heading:**
 
-<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="ATL Pride" src="https://codepen.io/GAmarketing/embed/oNOYaye?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/GAmarketing/pen/oNOYaye">
+- Create a CSS rule for the `h1`.
+- Set its font size to **`2.5em`**.
+
+**2. Style the `<h2>` heading:**
+
+- Create a CSS rule for the `h2`.
+- Set its font size to **`1.8em`**.
+
+**3. Style the `<span>` inside the paragraph:**
+
+- Find the `<span>` that wraps the text for Hannah’s hometown.
+- Set the font to **`bold`** and change the color to **`#d35400` (burnt orange)**.
+
+<!-- styling-text-with-css-hannahs-site-3 -->
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Checking In with Our Client" src="https://codepen.io/GAmarketing/embed/xbxrZMp?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/xbxrZMp">
   ATL Pride</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
 ---
 
-<h1 class="slide-header">Checking In with Our Client</h1>
+<h1 class="slide-header">Styling Link Text</h1>
 
-Now that we know a bit more about text styling, let’s reach out to Hannah and see if she has any requests.
+The text on the website is looking great, but there's one section we haven't styled yet—Hannah's navigation links.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/txt-msg-font.png)
+To style the links, we need to **target the `<a>` tags inside the `<nav>`**.
 
-Based on this feedback, let’s make these updates:
-1. Adjust the `<h1>` to be 36px without changing the `<h2>` styling. (Hint: You’ll need to separate out the existing rule!)
-2. Add a rule for the `<a>` tags to make the text purple (try Hex #9932cc) and remove the default underlines.
+We can do this using the following syntax:
 
-  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Checking In With Our Client" src="https://codepen.io/GAmarketing/embed/RwOoeJM?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-    See the Pen <a href="https://codepen.io/GAmarketing/pen/RwOoeJM">
-    Checking In With Our Client</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
-    on <a href="https://codepen.io">CodePen</a>.
-  </iframe>
+```css
+nav a {
+  /* This will style only the <a> tags inside the <nav> element */
+  /* It ignores all other <a> tags on a page! */
+}
+```
 
----
+**1. Select the `<a>` tags inside the `<nav>` by writing a new CSS rule for `nav a`.**
 
-<h1 class="slide-header">A Cool Trick</h1>
+**2. Remove the underline – Set the text decoration to `none` so links are not underlined.**
 
-Let’s look at the links in Hannah’s nav: the `<a>` tags we just styled. They’re now purple and not underlined. But this might make it hard for a user to know that the links are clickable, right?
+**3. Change the text color – Set the color to white `#ffffff` so the links stand out against the background.**
 
-  In our CSS, we can add a little trick that makes an underline appear beneath the link text when and only when **someone hovers over the words**. We’ll target the `hover` property of the `<a>` element via a **pseudo-class**. 
-  
-  Jump in and add the following code:
-  
-  ```css
-  a:hover {
-    text-decoration: underline;
-  }
-  ```
+**4. Make the text bold – Apply `bold` font weight to make the links more prominent.**
 
-  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="A Cool Trick" src="https://codepen.io/GAmarketing/embed/WNWoayW?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-    See the Pen <a href="https://codepen.io/GAmarketing/pen/WNWoayW">
-    A Cool Trick</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
-    on <a href="https://codepen.io">CodePen</a>.
-  </iframe>
+<!-- styling-text-with-css-hannahs-site-4 -->
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Styling Link Text" src="https://codepen.io/GAmarketing/embed/pvowEZg?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/pvowEZg">
+  Checking In With Our Client</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 ---
 
-<h1 class="slide-header">Checking In Again</h1>
+<h1 class="slide-header">Pseudo Classes</h1>
 
-Let’s see what Hannah thinks now!
+Let’s take another look at the links in Hannah’s navigation menu. Right now, they are styled but don't stand out when hovered over. To improve the user experience, we can make the link color change when someone **hovers over** it.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/txt-msg-bullets.png)
+In CSS, we can use the `hover` pseudo-class to style links when a user moves their mouse over them.
+
+```css
+nav a:hover {
+  color: #ffdc00ff;
+}
+```
+
+**1. Add a new CSS rule that targets the `hover` state of _only_ the `<a>` tags inside the `<nav>`.**
+
+**2. Inside the rule, set a new text color to make the links visually change when hovered over.**
+
+**3. Choose a color that stands out but still fits the overall design of the website.**
+
+Once you’ve added this, try hovering over the links and see how they respond!
+
+<!-- styling-text-with-css-hannahs-site-5 -->
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="A Cool Trick" src="https://codepen.io/GAmarketing/embed/dPyRpBq?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/dPyRpBq">
+  A Cool Trick</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+---
+
+<h1 class="slide-header">Checking In</h1>
+
+Hannah said the site is really coming together! We’ve even added some interactive links that change color when hovered over—nice work!
+
+But something still feels off… The navigation links and social media icons in the footer have bullets next to them. That’s because they’re inside unordered lists `<ul>`.
+
+Wouldn’t it be great if we could remove those bullets, just like we removed the default underlines from links?
+
+Good news—we can! Let’s clean up the design by getting rid of those bullets.
 
 ---
 
 <h1 class="slide-header">List Styling</h1>
 
-When we add a list in HTML, it comes with some default styling:
-* The `<ol>` (ordered list) is numbered.
-* The `<ul>` (unordered list) comes with solid-disc bullet points. 
+When we add a list in HTML, it comes with _default styling_:
 
-We can control this default styling by applying the `list-style` CSS property to an `<ol>` or `<ul>`.
+- **Ordered lists `<ol>`** use **numbers**.
+- **Unordered lists `<ul>`** use **solid bullet points**.
 
-We have several choices for how our bullets can look, such as `square` (a solid square) or `circle` (an open circle). Hannah has asked us to remove the bullet points altogether. We can do this by setting the `list-style` value to `none`. 
+We can **customize or remove** this styling using the `list-style` CSS property.
 
-Let’s try it out!
-1. Create a new CSS declaration for the `<ul>`.
-2. Set the `list-style` property to `none`.
+Some options for bullet styles include:
 
-<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="List Styling" src="https://codepen.io/GAmarketing/embed/jORVeKj?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/GAmarketing/pen/jORVeKj">
+- `square` → Uses solid squares as bullets.
+- `circle` → Uses open circles as bullets.
+- `none` → Removes bullets completely.
+
+Hannah has requested that we **remove the bullet points** from her lists. To do this, we’ll set `list-style` to `none`.
+
+Let’s give it a try!
+
+**1. Create a new CSS declaration for the `<ul>` in the `<nav>`.**
+
+**2. Set the `list-style` property to `none`.**
+
+**3. Create a new CSS declaration for the `<ul>` in the `<footer>`.**
+
+**4. Set the `list-style` property to `none`.**
+
+<!-- styling-text-with-css-hannahs-site-6 -->
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="List Styling" src="https://codepen.io/GAmarketing/embed/YPzQpro?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/YPzQpro">
   List Styling</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
@@ -254,59 +330,93 @@ Let’s try it out!
 
 <h1 class="slide-header">The Fun Stuff: Fonts</h1>
 
-There’s one big text-styling tool we haven’t covered yet: fonts! From Comic Sans, to Helvetica, to Times New Roman, the fonts you use on a site have a big impact on how people experience it.
+### **The Fun Stuff: Fonts!**
 
-To add fonts to your webpage, you’ll have to import them from an external source. And, while fonts can get expensive, lots of them are free! You can browse free fonts and import them from <a href="https://fonts.google.com/" target="_blank" rel="noreferrer noopener">Google Fonts</a>. 
+We’ve styled text size, color, and alignment—but there’s one big thing we haven’t touched yet: **fonts!**
 
-Let’s share this link with Hannah:
+From Comic Sans to Helvetica to Times New Roman, the fonts you choose can completely change the feel of a website. They help set the **tone** and make text more readable (or more playful!).
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/txt-msg-poiret.png)
+To use different fonts on a webpage, we need to **import them from an external source**. Some fonts can be pricey, but don’t worry—there are tons of free options! One of the best places to find them is **[Google Fonts](https://fonts.google.com/)**.
+
+Let’s check in with Hannah to see if she has a favorite font for her website...
 
 ---
 
 <h1 class="slide-header">Importing Fonts</h1>
 
-Hannah’s wish is our command, so let’s add the font she liked: <a href="https://fonts.google.com/specimen/Poiret+One?selection.family=Poiret+One" target="_blank" rel="noreferrer noopener">Poiret One</a>.
+Hannah wants her website to have a polished, professional look, so let's add a sleek and modern font: **[Raleway](https://fonts.google.com/specimen/Raleway)**. This font is elegant and well-suited for an artist's portfolio.
 
-First, we'll have to import the font before we can apply it. To import a font:
+Before we can use it, we need to **import** the font into our CSS file.
 
-1.  After selecting the font, click "Select Style" (located underneath Size). A new column window will pop up on the right hand side of the window. 
-2. Under “Embed Font,” click “@Import.”
-3. Copy the import URL (you won’t need the `style` tags in this case): `@import url('https://fonts.googleapis.com/css?family=Poiret+One');`.
-4. Paste the entire URL at the very top of your CSS style sheet, above all of your other rules.
+### **How to Import a Font:**
 
-**Note**: You wouldn't see the font on the page just yet– it won't automatically be added to any HTML elements.
+1. Go to **[Google Fonts](https://fonts.google.com/specimen/Raleway)** and select **"Get font"**.
+2. On the next page, select **"< > Get embed code"**.
+3. From the **"Embed code"** page, click the **"@import"** option under the **"Web"** tab.
+4. Copy the **@import URL** (you won’t need the `<style>` tags) to use in your css.
 
-You can use this same approach to import as many fonts as you’d like, but keep in mind that importing more than 2–3 may slow down your website’s performance.
+```css
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+```
+
+5. To use, paste this import code **at the very top** of your CSS file, above all other rules. (We'll do that next!)
+
+**Note:** The font won't apply to your text automatically! We'll still need to specify it in our CSS using the `font-family` property.
+
+You can use this same method to import multiple fonts, but be mindful—importing too many can slow down your website. Stick to **2–3 fonts max** for the best performance!
 
 ---
 
 <h1 class="slide-header">Styling with Fonts</h1>
 
-Once we’ve imported a font, we get it to show up on the page by applying it to HTML elements. To do so, create a CSS rule with the `font-family` property, followed by the name of the font in quotes, like this: `font-family: 'Poiret One'`.
+After importing a font, we need to **apply it** to HTML elements using the `font-family` property.
 
-Unfortunately for web designers like you, not all web browsers support all fonts. To be safe, always place a comma after your selected font and enter a generic font family (e.g., `serif`, `sans-serif`) as a fallback. If a web browser doesn’t support the first font you’ve selected, it will automatically choose your fallback.
+To do this, we'll use the existing CSS rule for the `<body>` and set `font-family` to the new font name in quotes:
 
-Here’s what that would look like:
 ```css
-h1 {
-  font-family: 'Georgia', sans-serif;
+body {
+  font-family: 'Raleway';
 }
 ```
+
+**Adding a Fallback Font**
+
+Not all browsers support every font, so it's best to include a fallback—a generic font family (serif, sans-serif, etc.). If the main font isn’t available, the browser will use the fallback instead.
+
+```css
+body {
+  font-family: 'Raleway', sans-serif;
+}
+```
+
+This ensures the text still looks good even if the primary font isn’t supported!
+
+In the next exercise we'll finally add a new font to Hannah's site!
 
 ---
 
 <h1 class="slide-header">Your Turn</h1>
 
-Let’s work some font magic on Hannah’s site!
+Let’s apply the **Raleway** font to Hannah’s site!
 
-1. Create a new CSS rule for the `<body>` (to make sure that all of the text on the website uses our font).
-2. Add `'Poiret One'` as the `font-family` and, to be safe, we’ll use `sans-serif` as the fallback.
+1. Add the following import link to the **1st** line of your css:
 
-Remember, you’ll first need the `import` statement: `@import url('https://fonts.googleapis.com/css?family=Poiret+One');`.
+```css
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+```
 
-**Pro tip**: Add the `<body>` rule at the top of your style sheet — below the `@import` URL but before all of the other rules.
+2. Create a new CSS property for the `<body>` to ensure all text on the website uses the selected font.
 
+```css
+body {
+  font-family: 'Raleway', sans-serif;
+  /* other body styles here */
+}
+```
+
+3. Set the `font-family` to **'Raleway'** and add **sans-serif** as a fallback in case the font isn’t supported.
+
+<!-- styling-text-with-css-hannahs-site-7 -->
   <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Font Magic" src="https://codepen.io/GAmarketing/embed/eYoBPjJ?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
     See the Pen <a href="https://codepen.io/GAmarketing/pen/eYoBPjJ">
     Font Magic</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
@@ -316,112 +426,176 @@ Remember, you’ll first need the `import` statement: `@import url('https://font
 
 <h1 class="slide-header">Getting Specific With It</h1>
 
-If you look through Hannah’s HTML, you’ll see that there are two `<ul>`s and two `<p>`s on the page. So far, we’ve been applying our CSS styles to all instances of an element. Both `<p>`s  are centered and gray. But what if we wanted to make the second `<p>` black?
+If you look at Hannah’s HTML, you’ll notice there are **two `<ul>` lists** and **two sets of `<a>` tags** on the page. So far, we've been styling specific elements by **referencing their parent elements**, like `nav ul` or `footer ul`.
 
-We can get specific with our styling by adding some more information to our code: **classes** and **IDs**. We’ll add a class or ID label to an element’s HTML tag, then refer to that label in the CSS. By doing so, we can target that specific instance with any styling we want.
+But what if we want to style an individual element without relying on its parent?
 
-Here’s what that looks like:
+To make specific elements stand out, we use **classes** and **ids**. These labels let us **target individual elements** and apply styles only to them, rather than affecting everything of the same type.
+
+**How It Works:**
+
+We assign a **class** or **id** to an HTML tag, then reference that label in our CSS.
+
 ```html
-// We can take this element:
-<h2>Welcome to my portfolio!</h2>
-
-// And give it a class like this:
-<h2 class="first-header">Welcome to my portfolio!</h2>
+<p class="introduction">
+  Hi, I'm Hannah. I'm a muralist from <span>Atlanta, GA</span>. I love playing
+  with colors, brushstrokes, and animals. Check out my work!
+</p>
 ```
 
-Let’s see how each label works.
+```html
+<p id="introduction">
+  Hi, I'm Hannah. I'm a muralist from <span>Atlanta, GA</span>. I love playing
+  with colors, brushstrokes, and animals. Check out my work!
+</p>
+```
+
+This way only one `<p>` tag on the page receives certain styles.
 
 ---
 
 <h1 class='slide-header'>Working with IDs</h1>
 
-An **ID** lets us specify a unique label so that we can apply distinct styles to _just one thing_. You can add an ID to any part of your HTML in order to single it out, then target that ID in the CSS using the `#` character.
+An **ID** is used to give a **unique label** to a single element, allowing us to apply styles to _just one specific thing_.
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/ids.png)
+**How to Use an ID:**
 
-**Remember**: IDs must be _unique_! That is, we can only use the `#very-unique` ID once in the HTML. If we wanted to specify other `<p>` elements, we’d have to give them different IDs. As such, you should avoid using IDs unless you _know for certain_ the element is going to be unique.
+1. Add an `id` attribute to an element in your HTML.
+2. Target that ID in CSS using the `#` symbol.
+
+<img src="./assets/ids-in-css.png" alt="IDs in CSS" style="width:800px;"/>
+
+**Important Note:**
+
+**IDs must be unique!** You can only use the same `id` **once** in your HTML.
+
+If you need to style multiple elements the same way, use a **class instead of an ID**. IDs are best used when you’re certain the element will be **one of a kind** on the page.
 
 ---
 
 <h1 class="slide-header">Working with Classes</h1>
 
-On the other hand, a **class** lets us label several elements as belonging to the same group. You can use the same class throughout your HTML in order to apply the same style to many elements, and then target that class in CSS using the `.` character.
+### **Working with Classes**
 
-![link text](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/css-unit-assets/classes.png)
+A **class** allows you to apply the same style to **multiple elements** on a webpage. Instead of styling each element separately, you can assign a **class name** to several elements and target that class in CSS using the `.` character.
 
-**Pro tip**: Use a class if you know that you’ll have several similar elements on your webpage — for example, several lists you want to look the same, or several images you want to be the same size. You’ll only need to write _one set of styles_ for that class and it will apply to all tagged elements.
+**How to Use a Class:**
+
+1. Add a `class` attribute to the elements you want to style.
+2. Use the class name in CSS with a `.` before it.
+
+<img src="./assets/classes-in-css.png" alt="Classes in CSS" style="width:800px;"/>
+
+**Pro Tip:** Use a class when you expect to have **multiple elements** that should look the same, like headings, buttons, or image containers!
 
 ---
 
 <h1 class="slide-header">Overruled!</h1>
 
-When we start using more specific selectors, such as classes and ids, it's possible to have several, conflicting CSS rules that would target the same element. In that case, the **most specific selector** always wins. In the example below, the p tag would be colored purple and sized 16px, because ids are more specific than classes, and classes are more specific than element selectors.
+When we start using **classes** and **IDs** alongside element selectors, we might run into **conflicting CSS rules**.
 
-```html
-<p class="medium-size" id="purple">I'm so conflicted!</p>
-```
+If multiple rules target the **same element**, the browser follows a **specificity hierarchy** to determine which style applies. The **most specific selector wins!**
 
-```css
-p {
-	font-size: 12px;
-	color: blue;
-}
-.medium-size {
-	font-size: 16px;
-	color: green;
-}
-#purple {
-	color: purple;
-}
-```
+**CSS Specificity Order**
+
+1. **IDs (`#id-name`)** – Most specific
+2. **Classes (`.class-name`)** – Less specific than IDs but more specific than element selectors
+3. **Element selectors (`p`, `h1`, `div`)** – Least specific
+4. **The Cascade** – If two rules have the **same specificity**, the one that appears **later in the CSS file** will be applied. CSS reads styles **top to bottom**, so the last conflicting rule wins.
+
+<img src="./assets/specificity-order-in-css.png" alt="Classes in CSS" style="width:800px;"/>
+
+**What’s happening?**
+
+Even if CSS rules appear in a different order in the stylesheet, **classes and IDs override element selectors** based on their **specificity**.
+
+Here’s how the rules are applied:
+
+- The `p` selector sets the **text color to blue** and the **font size to 12px**.
+- The `.medium-size` class **overrides the `p` rule**, changing the **font size to 20px** and the **color to green**.
+- The `#purple` ID **takes priority over both** and **sets the text color to purple**.
+
+**Final result:** The paragraph will have a font size of `20px` and `purple` text because IDs are the most specific, but classes override element selectors.
+
+**Pro Tip:** When writing CSS, always think about specificity! If something isn’t styling as expected, check if a more specific rule is taking over.
 
 ---
 
 <h1 class="slide-header">Knowledge Check</h1>
 
-Another client has asked you to style a sidebar on their portfolio website. The sidebar includes a heading, subheading, two bio paragraphs, and a few social media icons. 
+Another client has asked you to style the **sidebar** on their portfolio website. The sidebar contains:
 
-Currently, all of the text is the same color. Describe the best approach for making **only the two bio paragraphs** blue.
+- A heading
+- A subheading
+- Two bio paragraphs
+- Three Social media icons
 
-<details>
-  <summary>Reveal Answer</summary>
-  As there are two bio paragraphs and possibly other paragraph elements on the page, you should assign the bio paragraphs a class called "bio".
+Right now, all the text is the same color. How would you style **only the two bio paragraphs** to be blue, without affecting other text on the page?
 
-Then, you can add CSS to style the text color of the bio paragraphs:
+<details>  
+  <summary>Click to see the answer</summary>
+
+Since there are multiple paragraphs on the page, the best approach is to assign a class to the two bio paragraphs.
+
+1. Add a class="bio" to each bio paragraph in the HTML.
+2. Use CSS to target the .bio class and change its text color.
 
 .bio {
- color: #2e77bb;
+color: blue;
 }
-  </details>
+
+This ensures that only the bio paragraphs are affected, leaving other paragraphs unchanged.
+
+</details>
 
 ---
 
 <h1 class="slide-header">Making Hannah's Website Classy</h1>
 
-Let’s revisit Hannah’s website. Remember our two sets of `<ul>`s? We’ll want to distinguish between them so that we can style them differently in the future.
+Let’s revisit Hannah’s website and use **IDs** and **classes** to apply styles more precisely.
 
-We’ll apply classes and IDs to the `<li>`s so that we can target those directly:
-1. Give the social icons a `class` of “social” and the navigation items a `class` of “nav.” (Hint: Make sure to add the class before the opening `<a>` tag.)
-2. See how the Instagram icon is a little different? It has a lot of whitespace around it, and we might need to format it individually. Let’s give it an `id` of “insta.” (Yes, you can give an element a class AND an ID!)
+**1. Style the introduction paragraph:**
 
-Next, let’s specify the `<p>` elements. There’s one at the top and one in the footer:
-1. Give the first `<p>` a `class` of “top” and the second `<p>` a `class` of “footer.”
-2. Next, add CSS styling to the “footer” `<p>`: Make the text 14px, black (Hex #000000), and italicized.
+- Add an `id="introduction"` to the introduction paragraph in the HTML.
+- In CSS, create a rule for `#introduction` and set the **font size to 1.2em** to make it stand out.
 
-One last thing: There’s a bit too much purple text on the site. Let’s set the `<h1>` and `<h2>` back to a font color of black.
+**2. Style the social media icons:**
 
-  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Making Hannahs Website Classy" src="https://codepen.io/GAmarketing/embed/XWQNxBK?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-    See the Pen <a href="https://codepen.io/GAmarketing/pen/XWQNxBK">
-    Making Hannahs Website Classy</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
-    on <a href="https://codepen.io">CodePen</a>.
-  </iframe>
+- Add a `class="social"` to **each** `<img>` inside the social media list.
+- In CSS, create a rule for `.social` and set the **width to `30px`** and **height to `30px`** to ensure all icons are the same size.
+
+Once you’ve added these styles, check the website to see how it looks!
+
+<!-- styling-text-with-css-hannahs-site-8 -->
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Making Hannahs Website Classy" src="https://codepen.io/GAmarketing/embed/LEYLxLp?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/LEYLxLp">
+  Making Hannahs Website Classy</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+---
+
+<h1 class="slide-header">Great Progress</h1>
+
+Hannah’s website is really coming together! The colors, fonts, and text styles are looking amazing.
+
+But there’s one last thing—**layout!** Right now, some elements feel a little out of place. 
+
+In the next section, we’ll dive into **position and spacing**—giving elements the room to breathe and making everything look more professional.
+
+Get ready to bring it all together!
+
+<img src="./assets/website-progress-2.png" alt="Classes in CSS" style="width:800px;"/>
+
 ---
 
 <h1 class="slide-header">Conclusion</h1>
 
-Have we converted you into a text-styling nerd yet? If not, these sites certainly will:
-* <a href="https://1stwebdesigner.com/css3-text-effects-typography/" target="_blank" rel="noreferrer noopener">More ways to style text in CSS</a>.
-* A collection of awesome <a href="https://envato.com/blog/css3-typography-code-snippets/" target="_blank" rel="noreferrer noopener">text-styling code snippets</a> you can grab for your own projects.
-* <a href="http://hellohappy.org/beautiful-web-type/" target="_blank" rel="noreferrer noopener">Beautiful Web Type</a>.
+Are you excited about text styling yet? If not, these resources will definitely inspire you:
+
+- **[More ways to style text in CSS](https://1stwebdesigner.com/css3-text-effects-typography/)** – Explore creative text effects and typography techniques.
+- **[Text-styling code snippets](https://envato.com/blog/css3-typography-code-snippets/)** – A collection of ready-to-use CSS snippets for stylish typography.
+- **[Beautiful Web Type](http://hellohappy.org/beautiful-web-type/)** – A showcase of amazing fonts and how to use them effectively in web design.
+
+Check them out and take your text styling skills to the next level!
 
 </textarea>
