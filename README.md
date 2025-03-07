@@ -1,11 +1,15 @@
-<textarea id="source">
+<!-- <textarea id="source"> -->
 
 <h1 class="slide-header">Styling Text with CSS</h1>
 
 <span id=time-estimate class="color-grey-500">30 mins</span>
 
 <p id="lesson-description">
-Have you ever squinted over a website because it was too hard to read on your phone? Or because the font color blended to closely into the background? Text styles affect the readability of a website and in turn how viewers engage with your page. In this lesson, we’ll show you how to set specific, user-friendly fonts and font styles.
+Ever struggled to read a website on your phone because the text was too small? Or maybe the font color blended into the background, making it hard to see?
+
+Good text styling isn’t just about looks—it’s about **readability**. The right fonts and styles make your website easier to read and more engaging for visitors.
+
+In this lesson, we’ll show you how to choose **clear, user-friendly fonts** and style them effectively to improve the experience for everyone!
 </p>
 
 <h5 id="topics-header" class="color-grey-500">Topics</h5>
@@ -191,7 +195,7 @@ h2 {
 
 ---
 
-<h1 class="slide-header">Checking In with Our Client</h1>
+<h1 class="slide-header">Checking In With Our Client</h1>
 
 Let's apply some font styling! Hannah wants her name to stand out, so we'll make the headline larger and make some other text adjustments throughout the page.
 
@@ -217,13 +221,15 @@ Let's apply some font styling! Hannah wants her name to stand out, so we'll make
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+
 ---
 
 <h1 class="slide-header">Styling Link Text</h1>
 
 The text on the website is looking great, but there's one section we haven't styled yet—Hannah's navigation links.
 
-To style the links, we need to **target the `<a>` tags inside the `<nav>`**.
+To style the links, we need to **target the `<a>` tags inside the `<nav>` element**.
 
 We can do this using the following syntax:
 
@@ -248,6 +254,8 @@ nav a {
   Checking In With Our Client</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
 
 ---
 
@@ -278,6 +286,8 @@ Once you’ve added this, try hovering over the links and see how they respond!
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+
 ---
 
 <h1 class="slide-header">Checking In</h1>
@@ -307,15 +317,19 @@ Some options for bullet styles include:
 - `circle` → Uses open circles as bullets.
 - `none` → Removes bullets completely.
 
-Hannah has requested that we **remove the bullet points** from her lists. To do this, we’ll set `list-style` to `none`.
+---
+
+<h1 class="slide-header">Removing List Styling</h1>
+
+Hannah has requested that we **remove the bullet points** from her links and social icons. To do this, we’ll need to set `list-style` to `none`.
 
 Let’s give it a try!
 
-**1. Create a new CSS declaration for the `<ul>` in the `<nav>`.**
+**1. Create a new CSS declaration for the `nav ul`.**
 
 **2. Set the `list-style` property to `none`.**
 
-**3. Create a new CSS declaration for the `<ul>` in the `<footer>`.**
+**3. Create a new CSS declaration for the `footer ul`.**
 
 **4. Set the `list-style` property to `none`.**
 
@@ -326,11 +340,11 @@ Let’s give it a try!
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+
 ---
 
 <h1 class="slide-header">The Fun Stuff: Fonts</h1>
-
-### **The Fun Stuff: Fonts!**
 
 We’ve styled text size, color, and alignment—but there’s one big thing we haven’t touched yet: **fonts!**
 
@@ -348,9 +362,9 @@ Hannah wants her website to have a polished, professional look, so let's add a s
 
 Before we can use it, we need to **import** the font into our CSS file.
 
-### **How to Import a Font:**
+**How to Import a Font:**
 
-1. Go to **[Google Fonts](https://fonts.google.com/specimen/Raleway)** and select **"Get font"**.
+1. Go to the**[Google Fonts page for Raleway](https://fonts.google.com/specimen/Raleway)** and select **"Get font"**.
 2. On the next page, select **"< > Get embed code"**.
 3. From the **"Embed code"** page, click the **"@import"** option under the **"Web"** tab.
 4. Copy the **@import URL** (you won’t need the `<style>` tags) to use in your css.
@@ -359,19 +373,15 @@ Before we can use it, we need to **import** the font into our CSS file.
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 ```
 
-5. To use, paste this import code **at the very top** of your CSS file, above all other rules. (We'll do that next!)
-
-**Note:** The font won't apply to your text automatically! We'll still need to specify it in our CSS using the `font-family` property.
-
-You can use this same method to import multiple fonts, but be mindful—importing too many can slow down your website. Stick to **2–3 fonts max** for the best performance!
+To use it, we'll paste this import code **at the very top** of our CSS file, above all other rules. (We'll do that in the next exercise!)
 
 ---
 
 <h1 class="slide-header">Styling with Fonts</h1>
 
-After importing a font, we need to **apply it** to HTML elements using the `font-family` property.
+After importing a font, we'll need to **apply it** to HTML elements using the `font-family` property.
 
-To do this, we'll use the existing CSS rule for the `<body>` and set `font-family` to the new font name in quotes:
+To do this, we'll use the existing CSS rule for the `<body>` and set its `font-family` to the new font name in quotes:
 
 ```css
 body {
@@ -389,9 +399,9 @@ body {
 }
 ```
 
-This ensures the text still looks good even if the primary font isn’t supported!
+This ensures the text still looks good even if the primary font isn’t supported.
 
-In the next exercise we'll finally add a new font to Hannah's site!
+In the next exercise we'll finally add our new font to Hannah's site!
 
 ---
 
@@ -399,13 +409,13 @@ In the next exercise we'll finally add a new font to Hannah's site!
 
 Let’s apply the **Raleway** font to Hannah’s site!
 
-1. Add the following import link to the **1st** line of your css:
+**1. Add the following import link to the **1st** line of your css:**
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 ```
 
-2. Create a new CSS property for the `<body>` to ensure all text on the website uses the selected font.
+**2. Create a new CSS property for `font-family` on the `<body>` to ensure all text on the website uses the selected font. Set the `font-family` to 'Raleway' and add _sans-serif_ as a fallback in case the font isn’t supported.**
 
 ```css
 body {
@@ -414,21 +424,20 @@ body {
 }
 ```
 
-3. Set the `font-family` to **'Raleway'** and add **sans-serif** as a fallback in case the font isn’t supported.
-
-<!-- styling-text-with-css-hannahs-site-7 -->
-  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Font Magic" src="https://codepen.io/GAmarketing/embed/eYoBPjJ?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-    See the Pen <a href="https://codepen.io/GAmarketing/pen/eYoBPjJ">
+<!-- styling-text-with-css-hannahs-site-7 --> test is not working not detecting the raleway on body
+  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Font Magic" src="https://codepen.io/GAmarketing/embed/xbxrRJm?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+    See the Pen <a href="https://codepen.io/GAmarketing/pen/xbxrRJm">
     Font Magic</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
     on <a href="https://codepen.io">CodePen</a>.
   </iframe>
----
+
+## **TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
 
 <h1 class="slide-header">Getting Specific With It</h1>
 
 If you look at Hannah’s HTML, you’ll notice there are **two `<ul>` lists** and **two sets of `<a>` tags** on the page. So far, we've been styling specific elements by **referencing their parent elements**, like `nav ul` or `footer ul`.
 
-But what if we want to style an individual element without relying on its parent?
+But what if we want to style an individual element _without_ relying on its parent?
 
 To make specific elements stand out, we use **classes** and **ids**. These labels let us **target individual elements** and apply styles only to them, rather than affecting everything of the same type.
 
@@ -450,8 +459,6 @@ We assign a **class** or **id** to an HTML tag, then reference that label in our
 </p>
 ```
 
-This way only one `<p>` tag on the page receives certain styles.
-
 ---
 
 <h1 class='slide-header'>Working with IDs</h1>
@@ -463,19 +470,17 @@ An **ID** is used to give a **unique label** to a single element, allowing us to
 1. Add an `id` attribute to an element in your HTML.
 2. Target that ID in CSS using the `#` symbol.
 
-<img src="./assets/ids-in-css.png" alt="IDs in CSS" style="width:800px;"/>
+<img src="./assets/ids-in-css.png" alt="IDs in CSS" style="width:900px;"/>
 
-**Important Note:**
+**Important Notes:**
 
-**IDs must be unique!** You can only use the same `id` **once** in your HTML.
+- **IDs must be unique!** You can only use the same `id` **once** in your HTML.
 
-If you need to style multiple elements the same way, use a **class instead of an ID**. IDs are best used when you’re certain the element will be **one of a kind** on the page.
+- If you need to style multiple elements the same way, use a **class instead of an ID**. IDs are best used when you’re certain the element will be **one of a kind** on the page.
 
 ---
 
 <h1 class="slide-header">Working with Classes</h1>
-
-### **Working with Classes**
 
 A **class** allows you to apply the same style to **multiple elements** on a webpage. Instead of styling each element separately, you can assign a **class name** to several elements and target that class in CSS using the `.` character.
 
@@ -484,7 +489,7 @@ A **class** allows you to apply the same style to **multiple elements** on a web
 1. Add a `class` attribute to the elements you want to style.
 2. Use the class name in CSS with a `.` before it.
 
-<img src="./assets/classes-in-css.png" alt="Classes in CSS" style="width:800px;"/>
+<img src="./assets/classes-in-css.png" alt="Classes in CSS" style="width:900px;"/>
 
 **Pro Tip:** Use a class when you expect to have **multiple elements** that should look the same, like headings, buttons, or image containers!
 
@@ -503,21 +508,25 @@ If multiple rules target the **same element**, the browser follows a **specifici
 3. **Element selectors (`p`, `h1`, `div`)** – Least specific
 4. **The Cascade** – If two rules have the **same specificity**, the one that appears **later in the CSS file** will be applied. CSS reads styles **top to bottom**, so the last conflicting rule wins.
 
-<img src="./assets/specificity-order-in-css.png" alt="Classes in CSS" style="width:800px;"/>
+---
 
-**What’s happening?**
+<h1 class="slide-header">Specificity in Action</h1>
 
-Even if CSS rules appear in a different order in the stylesheet, **classes and IDs override element selectors** based on their **specificity**.
+**What is happening here?**
 
-Here’s how the rules are applied:
+<img src="./assets/specificity-order-in-css.png" alt="Specificity Order in CSS Example" style="width:800px;"/>
 
-- The `p` selector sets the **text color to blue** and the **font size to 12px**.
-- The `.medium-size` class **overrides the `p` rule**, changing the **font size to 20px** and the **color to green**.
-- The `#purple` ID **takes priority over both** and **sets the text color to purple**.
+Even if CSS rules appear in different places in the stylesheet, **specificity** determines which one applies.
 
-**Final result:** The paragraph will have a font size of `20px` and `purple` text because IDs are the most specific, but classes override element selectors.
+In the example above:
 
-**Pro Tip:** When writing CSS, always think about specificity! If something isn’t styling as expected, check if a more specific rule is taking over.
+- The `p` selector sets **blue text** and **12px font size**.
+- The `.medium-size` class **overrides the font size** to **20px** and changes the text to **green**.
+- The `#purple` ID **takes priority** and sets the **text color to purple**.
+
+**Final result:** The paragraph will have **purple text** and a **font size of 20px** because **IDs override classes, and classes override element selectors**.
+
+If a style isn’t applying as expected, check if a **more specific rule** is taking over!
 
 ---
 
@@ -535,16 +544,7 @@ Right now, all the text is the same color. How would you style **only the two bi
 <details>  
   <summary>Click to see the answer</summary>
 
-Since there are multiple paragraphs on the page, the best approach is to assign a class to the two bio paragraphs.
-
-1. Add a class="bio" to each bio paragraph in the HTML.
-2. Use CSS to target the .bio class and change its text color.
-
-.bio {
-color: blue;
-}
-
-This ensures that only the bio paragraphs are affected, leaving other paragraphs unchanged.
+Since there are multiple paragraphs on the page, the best approach is to assign a <strong>class</strong> to the two bio paragraphs. This ensures that only the bio paragraphs are affected, leaving other paragraphs unchanged.
 
 </details>
 
@@ -554,15 +554,13 @@ This ensures that only the bio paragraphs are affected, leaving other paragraphs
 
 Let’s revisit Hannah’s website and use **IDs** and **classes** to apply styles more precisely.
 
-**1. Style the introduction paragraph:**
+**1. Add an `id` to the introduction paragraph- Find the introduction paragraph in the HTML and add `id="introduction"` to the `<p>` tag.**
 
-- Add an `id="introduction"` to the introduction paragraph in the HTML.
-- In CSS, create a rule for `#introduction` and set the **font size to 1.2em** to make it stand out.
+**2. Style the introduction paragraph in CSS - Create a CSS rule targeting `#introduction` and set the font size to `1.2em` to make it stand out more.**
 
-**2. Style the social media icons:**
+**3. Add a `class` to the social media Icons - Find the `<img>` elements inside the social media list and add `class="social"` to each icon.**
 
-- Add a `class="social"` to **each** `<img>` inside the social media list.
-- In CSS, create a rule for `.social` and set the **width to `30px`** and **height to `30px`** to ensure all icons are the same size.
+**4. Style the social media icons in CSS - Create a CSS rule targeting `.social` and set the width to `30px` and height to `30px` so all icons are the same size.**
 
 Once you’ve added these styles, check the website to see how it looks!
 
@@ -572,13 +570,16 @@ Once you’ve added these styles, check the website to see how it looks!
   Making Hannahs Website Classy</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+
 ---
 
 <h1 class="slide-header">Great Progress</h1>
 
 Hannah’s website is really coming together! The colors, fonts, and text styles are looking amazing.
 
-But there’s one last thing—**layout!** Right now, some elements feel a little out of place. 
+But there’s one last thing—**layout!** Right now, some elements feel a little out of place.
 
 In the next section, we’ll dive into **position and spacing**—giving elements the room to breathe and making everything look more professional.
 
@@ -598,4 +599,4 @@ Are you excited about text styling yet? If not, these resources will definitely 
 
 Check them out and take your text styling skills to the next level!
 
-</textarea>
+<!-- </textarea> -->

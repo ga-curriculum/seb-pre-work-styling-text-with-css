@@ -1,5 +1,9 @@
 describe('Introduction paragraph and social media icons styling', function () {
-  it('should have an <p> element with id="introduction" and font size set to 1.2em', function () {
+  function convertPxToEm(pxValue) {
+    return pxValue / 16; // Assuming the browser's default base font size is 16px
+  }
+
+  it('should have a <p> element with id="introduction" and font size set to 1.2em', function () {
     const introParagraph = document.querySelector('#introduction');
 
     if (!introParagraph) {
@@ -8,11 +12,10 @@ describe('Introduction paragraph and social media icons styling', function () {
       );
     } else {
       const computedStyle = window.getComputedStyle(introParagraph);
+      const fontSizePx = parseFloat(computedStyle.fontSize);
+      const fontSizeEm = convertPxToEm(fontSizePx);
 
-      expect(computedStyle.fontSize).toBe(
-        '1.2em',
-        'The introduction paragraph (#introduction) should have font-size set to 1.2em.'
-      );
+      expect(fontSizeEm).toBeCloseTo(1.2, 1); // Allows small rounding errors
     }
   });
 

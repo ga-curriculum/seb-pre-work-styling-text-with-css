@@ -1,4 +1,8 @@
 describe('Heading and span styling', function () {
+  function convertPxToEm(pxValue) {
+    return pxValue / 16; // Assuming browser default font-size is 16px
+  }
+
   it('should style the <h1> with a font size of 2.5em', function () {
     const h1 = document.querySelector('h1');
 
@@ -8,11 +12,10 @@ describe('Heading and span styling', function () {
       );
     } else {
       const computedStyle = window.getComputedStyle(h1);
+      const fontSizePx = parseFloat(computedStyle.fontSize);
+      const fontSizeEm = convertPxToEm(fontSizePx);
 
-      expect(computedStyle.fontSize).toBe(
-        '2.5em',
-        'The <h1> font size should be 2.5em.'
-      );
+      expect(fontSizeEm).toBeCloseTo(2.5, 1); // Allow small rounding errors
     }
   });
 
@@ -25,11 +28,10 @@ describe('Heading and span styling', function () {
       );
     } else {
       const computedStyle = window.getComputedStyle(h2);
+      const fontSizePx = parseFloat(computedStyle.fontSize);
+      const fontSizeEm = convertPxToEm(fontSizePx);
 
-      expect(computedStyle.fontSize).toBe(
-        '1.8em',
-        'The <h2> font size should be 1.8em.'
-      );
+      expect(fontSizeEm).toBeCloseTo(1.8, 1);
     }
   });
 
