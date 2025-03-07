@@ -1,4 +1,4 @@
-<!-- <textarea id="source"> -->
+<textarea id="source">
 
 <h1 class="slide-header">Styling Text with CSS</h1>
 
@@ -599,4 +599,4 @@ Are you excited about text styling yet? If not, these resources will definitely 
 
 Check them out and take your text styling skills to the next level!
 
-<!-- </textarea> -->
+</textarea>
