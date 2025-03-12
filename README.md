@@ -10,6 +10,7 @@ Ever struggled to read a website on your phone because the text was too small? O
 Good text styling isn’t just about looks—it’s about **readability**. The right fonts and styles make your website easier to read and more engaging for visitors.
 
 In this lesson, we’ll show you how to choose **clear, user-friendly fonts** and style them effectively to improve the experience for everyone!
+
 </p>
 
 <h5 id="topics-header" class="color-grey-500">Topics</h5>
@@ -221,7 +222,7 @@ Let's apply some font styling! Hannah wants her name to stand out, so we'll make
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+<small><strong>TIP:</strong> After updating your code, click the <strong>"Run"</strong> or <strong>"Rerun"</strong> button in CodePen to make sure your changes take effect. Then, check <strong>View Test Results</strong> to see if your updates pass!</small>
 
 ---
 
@@ -255,7 +256,7 @@ nav a {
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+<small><strong>TIP:</strong> After updating your code, click the <strong>"Run"</strong> or <strong>"Rerun"</strong> button in CodePen to make sure your changes take effect. Then, check <strong>View Test Results</strong> to see if your updates pass!</small>
 
 ---
 
@@ -286,7 +287,7 @@ Once you’ve added this, try hovering over the links and see how they respond!
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+<small><strong>TIP:</strong> After updating your code, click the <strong>"Run"</strong> or <strong>"Rerun"</strong> button in CodePen to make sure your changes take effect. Then, check <strong>View Test Results</strong> to see if your updates pass!</small>
 
 ---
 
@@ -340,7 +341,7 @@ Let’s give it a try!
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+<small><strong>TIP:</strong> After updating your code, click the <strong>"Run"</strong> or <strong>"Rerun"</strong> button in CodePen to make sure your changes take effect. Then, check <strong>View Test Results</strong> to see if your updates pass!</small>
 
 ---
 
@@ -424,14 +425,16 @@ body {
 }
 ```
 
-<!-- styling-text-with-css-hannahs-site-7 --> test is not working not detecting the raleway on body
-  <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Font Magic" src="https://codepen.io/GAmarketing/embed/xbxrRJm?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-    See the Pen <a href="https://codepen.io/GAmarketing/pen/xbxrRJm">
-    Font Magic</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
-    on <a href="https://codepen.io">CodePen</a>.
-  </iframe>
+<!-- styling-text-with-css-hannahs-site-7 -->
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Font Magic" src="https://codepen.io/GAmarketing/embed/xbxrRJm?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/xbxrRJm">
+  Font Magic</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
-## **TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+<small><strong>TIP:</strong> After updating your code, click the <strong>"Run"</strong> or <strong>"Rerun"</strong> button in CodePen to make sure your changes take effect. Then, check <strong>View Test Results</strong> to see if your updates pass!</small>
+
+---
 
 <h1 class="slide-header">Getting Specific With It</h1>
 
@@ -571,7 +574,7 @@ Once you’ve added these styles, check the website to see how it looks!
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-**TIP** If your tests still fail after adding your style code, try hitting the **"Rerun"** button on CodePen to ensure all styles are applied before selecting **View Test Results**.
+<small><strong>TIP:</strong> After updating your code, click the <strong>"Run"</strong> or <strong>"Rerun"</strong> button in CodePen to make sure your changes take effect. Then, check <strong>View Test Results</strong> to see if your updates pass!</small>
 
 ---
 
